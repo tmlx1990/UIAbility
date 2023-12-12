@@ -12,6 +12,11 @@ struct Second {
           .fontSize(50)
           .fontWeight(FontWeight.Bold)
         Text(this.src)
+        Blank()
+        Button('Back')
+          .onClick(()=> {
+            router.back();
+          })
       }
       .width('100%')
     }
